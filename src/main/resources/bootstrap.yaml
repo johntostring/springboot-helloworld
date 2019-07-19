@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: springboot-helloworld
+  cloud:
+    kubernetes:
+      reload:
+        enabled: true
+      config:
+        namespace: sinnet
+        name: hi
+management:
+  endpoint:
+    restart:
+      enabled: true
